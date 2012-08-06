@@ -97,7 +97,7 @@ public class LauncherFrame extends JFrame {
      * Construct the launcher.
      */
     public LauncherFrame() {
-        setTitle("Teammuppet Minecraft Launcher");
+        setTitle("Teammuppet Launcher");
         setSize(300, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
