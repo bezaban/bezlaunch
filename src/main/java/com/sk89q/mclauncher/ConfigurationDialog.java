@@ -229,7 +229,7 @@ public class ConfigurationDialog extends JDialog {
         fullFieldConstraints.insets = new Insets(5, 2, 1, 2);
         
         if (configuration != null && configuration.isBuiltIn()) {
-            panel.add(new JLabel("This is a built-in configuration and editing is restricted."), fullFieldConstraints);
+            panel.add(new JLabel("Can't edit default config."), fullFieldConstraints);
             panel.add(Box.createVerticalStrut(10), fullFieldConstraints);
         }
         
