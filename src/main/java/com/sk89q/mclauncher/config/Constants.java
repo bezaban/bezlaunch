@@ -68,7 +68,7 @@ public class Constants {
      */
     public static void register(ConfigurationsManager configsManager) {
         configsManager.setDefault(configsManager.registerBuiltIn("minecraft",
-                "Default", null, null));
+                "Teammuppet", null, "http://mc.snowcrashed.net/config"));
     }
 
     /**
