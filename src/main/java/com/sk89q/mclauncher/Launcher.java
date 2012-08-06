@@ -114,7 +114,7 @@ public class Launcher {
         // Read options
         File base = getLauncherDataDir();
         base.mkdirs();
-        File optionsFile = new File(base, "config.xml");
+        File optionsFile = new File(base, "TMconfig.xml");
         options = new LauncherOptions(optionsFile);
         options.load();
         
@@ -302,7 +302,7 @@ public class Launcher {
      */
     public static File getLauncherDataDir() {
         String homeDir = System.getProperty("user.home", ".");
-        File workingDir = new File(".", "config.xml");
+        File workingDir = new File(".", "TMconfig.xml");
         if (workingDir.exists()) {
             return new File(".");
         }
@@ -327,7 +327,7 @@ public class Launcher {
             default:
                 workingDir = new File(homeDir, "SKMCLauncher");
         }
-        if (!new File(workingDir, "config.xml").exists()) {
+        if (!new File(workingDir, "TMconfig.xml").exists()) {
             workingDir = getOfficialDataDir();
         }
         if (!workingDir.exists() && !workingDir.mkdirs()) {
