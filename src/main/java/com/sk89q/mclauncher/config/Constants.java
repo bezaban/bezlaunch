@@ -39,7 +39,7 @@ public class Constants {
 
     public static final URL NEWS_URL;
         
-    private static final String NEWS_URL_BASE = "http://minecraft.update.sk89q.com/updates/?v=%version%";
+    private static final String NEWS_URL_BASE = "http://mc.snowcrashed.net/news/launcher";
     
     static {
         try {
