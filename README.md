@@ -1,5 +1,11 @@
-SK's Minecraft Launcher
-=======================
+Bezabans' Minecraft Launcher
+============================
+
+Fork of Sk89q's skmclauncher. All hail Sk89q!
+
+
+Original README.md follows.
+---------------------------
 
 SK's Minecraft Launcher is a custom Minecraft launcher with support for easy
 addon installation and more.
@@ -15,7 +21,6 @@ simply run:
 
 Maven will automatically download dependencies for you. Note: For that to work,
 be sure to add Maven to your "PATH".
-
 
 License
 -------

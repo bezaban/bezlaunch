@@ -2,14 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sk89q</groupId>
   <artifactId>mclauncher</artifactId>
-  <version>3.1.6-SNAPSHOT</version>
+  <version>tm-3.1.6-SNAPSHOT</version>
   <name>SK's Minecraft Launcher</name>
   <description>SK's launcher for Minecraft.</description>
   <url>http://www.sk89q.com</url>
   <scm>
-    <connection>scm:git:git://github.com/sk89q/skmclauncher.git</connection>
-    <url>https://github.com/sk89q/skmclauncher</url>
-    <developerConnection>scm:git:git@github.com:sk89q/skmclauncher.git</developerConnection>
+    <connection>scm:git:git://github.com/bezaban/bezlaunch.git</connection>
+    <url>https://github.com/bezaban/bezlaunch</url>
+    <developerConnection>scm:git:git@github.com:bezaban/bezlaunch.git</developerConnection>
   </scm>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,7 +23,7 @@
     <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
     <outputDirectory>${basedir}/target/classes</outputDirectory>
     <testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
-    <finalName>SKMCLauncher</finalName>
+    <finalName>TMLaunch</finalName>
     <resources>
       <resource>
         <targetPath>resources</targetPath>
