@@ -13,9 +13,9 @@
   </scm>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <signerKeyStore />
-    <signerPassword />
-    <signerAlias />
+    <signerKeyStore>/home/paul/.keystore</signerKeyStore>
+    <signerPassword></signerPassword>
+    <signerAlias>bezlaunch</signerAlias>
   </properties>
   <build>
     <sourceDirectory>${basedir}/src/main/java/</sourceDirectory>
