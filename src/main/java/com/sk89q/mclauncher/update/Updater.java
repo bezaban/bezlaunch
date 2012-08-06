@@ -336,25 +336,25 @@ public class Updater implements DownloadListener {
             fireStatusChange(String.format("Verifying %s (%d/%d)...", file.getFile().getName(),
                     currentIndex + 1, fileList.size()));
             
-            try {
-                file.verify(signatureVerifier);
-            } catch (SecurityException e) {
-                logger.log(Level.WARNING, "Failed to deploy " + file, e);
-                throw new UpdateException("The digital signature(s) of " +
-                        file.getFile().getAbsolutePath() + " could not be verified: " + e.getMessage(), e);
-            } catch (IOException e) {
-                logger.log(Level.WARNING, "Failed to deploy " + file, e);
-                throw new UpdateException("Could not install to " +
-                        file.getFile().getAbsolutePath() + ": " + e.getMessage(), e);
-            } catch (Throwable e) {
-                logger.log(Level.WARNING, "Failed to deploy " + file, e);
-                throw new UpdateException("Could not install " +
-                        file.getFile().getAbsolutePath() + ": " + e.getMessage(), e);
-            }
+  //          try {
+   //             file.verify(signatureVerifier);
+    //        } catch (SecurityException e) {
+     //           logger.log(Level.WARNING, "Failed to deploy " + file, e);
+     //           throw new UpdateException("The digital signature(s) of " +
+      //                  file.getFile().getAbsolutePath() + " could not be verified: " + e.getMessage(), e);
+         //   } catch (IOException e) {
+          //      logger.log(Level.WARNING, "Failed to deploy " + file, e);
+      //          throw new UpdateException("Could not install to " +
+           //             file.getFile().getAbsolutePath() + ": " + e.getMessage(), e);
+          //  } catch (Throwable e) {
+           //     logger.log(Level.WARNING, "Failed to deploy " + file, e);
+       //         throw new UpdateException("Could not install " +
+            //            file.getFile().getAbsolutePath() + ": " + e.getMessage(), e);
+         //   }
             
-            currentIndex++;
+            currentIndex++; 
         }
-    }
+    } 
     
     /**
      * Deploy newly-downloaded updates.
