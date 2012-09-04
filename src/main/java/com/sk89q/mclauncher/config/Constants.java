@@ -39,7 +39,7 @@ public class Constants {
 
     public static final URL NEWS_URL;
         
-    private static final String NEWS_URL_BASE = "http://mc.snowcrashed.net/news/launcher";
+    private static final String NEWS_URL_BASE = "http://mc.teammuppet.com/news/launcher";
     
     static {
         try {
@@ -68,7 +68,7 @@ public class Constants {
      */
     public static void register(ConfigurationsManager configsManager) {
         configsManager.setDefault(configsManager.registerBuiltIn("minecraft",
-                "Teammuppet",  "muppetcraft", "http://mc.snowcrashed.net/config.xml"));
+                "MuppetCraft",  "muppetcraft", "http://mc.teammuppet.com/config.xml"));
     }
 
     /**
