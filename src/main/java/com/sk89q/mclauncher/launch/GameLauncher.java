@@ -172,24 +172,15 @@ public class GameLauncher  {
                     Class<?> cls = classLoader.loadClass("net.minecraft.client.Minecraft");
 		
 			String[] mcArgs = new String[2];
+
+//What args to pass, if any?
 //                        mcArgs[0] = args[1];
- //                       mcArgs[1] = args[2];
+//                       mcArgs[1] = args[2];
                         mcArgs[0] = "test";
                         mcArgs[1] = "test";
-
-
-
 	
-			cls.getMethod("main", String[].class).invoke(null, (Object) mcArgs);			
+			cls.getMethod("main", String[].class).invoke(null, (Object) mcArgs);
 
-
-
-//                    Applet game = (Applet) cls.newInstance();
-                    
-//                    GameFrame frame = new GameFrame(windowDim);
-//                    frame.setVisible(true);
-//                    GameAppletContainer container = new GameAppletContainer(parameters, game, loaderCompat);
-//                    frame.start(container);
                 } catch (Throwable e) {
                     logger.log(Level.SEVERE, "Failed to launch", e);
                     UIUtil.showError(null, "Launch error", "An error occurred while launching: " +
