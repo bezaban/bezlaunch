@@ -61,7 +61,10 @@ public class GameLauncher  {
     private Map<String, String> parameters = new HashMap<String, String>();
     private List<String> addonPaths = new ArrayList<String>();
     private Dimension windowDim;
-    
+    private String[] mcArgs = new String[2];
+
+
+   
     private GameLauncher(File baseDir, String activeJar) {
         logger.info("SK's Minecraft Launcher, v" + Launcher.VERSION);
         
@@ -171,13 +174,13 @@ public class GameLauncher  {
                     
                     Class<?> cls = classLoader.loadClass("net.minecraft.client.Minecraft");
 		
-			String[] mcArgs = new String[2];
+		//directory, sessionid, username
 
-//What args to pass, if any?
-//                        mcArgs[0] = args[1];
-//                       mcArgs[1] = args[2];
-                        mcArgs[0] = "test";
-                        mcArgs[1] = "test";
+		logger.info("bezdebug Username:" +parameters.get("username"));
+        	logger.info("bezdebug SessionID:" +parameters.get("sessionid"));
+ 
+			mcArgs[0] = parameters.get("username");
+                        mcArgs[1] = parameters.get("sessionid");
 	
 			cls.getMethod("main", String[].class).invoke(null, (Object) mcArgs);
 
