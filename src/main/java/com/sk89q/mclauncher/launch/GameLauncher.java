@@ -174,13 +174,13 @@ public class GameLauncher  {
                     
                     Class<?> cls = classLoader.loadClass("net.minecraft.client.Minecraft");
 		
-		//directory, sessionid, username
+			//directory, sessionid, username
 
-		logger.info("bezdebug Username:" +parameters.get("username"));
-        	logger.info("bezdebug SessionID:" +parameters.get("sessionid"));
+			logger.info("bezdebug Username:" +parameters.get("username"));
+			logger.info("bezdebug SessionID:" +parameters.get("sessionid"));
  
 			mcArgs[0] = parameters.get("username");
-                        mcArgs[1] = parameters.get("sessionid");
+			mcArgs[1] = parameters.get("sessionid");
 	
 			cls.getMethod("main", String[].class).invoke(null, (Object) mcArgs);
 
